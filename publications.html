@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Prithwish Chakraborty</title>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <!-- Loading Bootstrap -->
+    <link href="./packages/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="packages/FlatUI-2/css/flat-ui.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./packages/FlatUI-2/img/favicon.ico">
+
+    <!-- Custom styles for this template -->
+    <link href="css/appearance.css" rel="stylesheet"/>
+    <link href='css/bib-publication-list.css' rel="stylesheet"/>
+
+     
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top navbar-md">
+  <div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" 
+        data-target="#navbar-collapse-01">
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <span class="glyphicon glyphicon-user"></span>
+        Prithwish Chakraborty
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse-01">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Publications</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="./resources/CV_PChakraborty.pdf" target="_blank" 
+            class="btn btn-link">
+          <span class="glyphicon glyphicon-save"></span>
+          Download CV
+        </a>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav><!-- /navbar -->
+
+<div class="container-fluid wrapper">
+<div class="container-fluid content">
+    <div class="row">
+        <!-- publication pane -->
+        <!-- Dummy div element -->
+        <div id='bibfile' style='display:none;'></div>
+
+        <div class="col-12">
+            <table id="biblist" class="display">
+            </table>
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+</div>
+
+<footer class="footer">
+    <div class="container-fluid">
+      <div class="row" style="padding-top: 4px;">
+       <div class="col-sm-3">
+           <ul class="list-unstyled text-centre">
+             <li>&copy; 2015 Prithwish Chakraborty<li>
+             <li>Last Updated: 2015-12-22</li>
+           </ul>
+       </div>
+
+       <div class="col-sm-9">
+         <ul class="list-unstyled sm-right">
+           <li>
+          <em>"Logic will get you from A to B. Imagination will take you everywhere"</em>
+          </li>
+          <li>
+          &mdash; Albert Einstein
+          </li>
+         </ul>
+       </div>
+     </div>
+    </div>
+</footer>
+
+<!-- Jquery -->
+<script type="text/javascript" src="packages/FlatUI-2/js/vendor/jquery.min.js"></script>
+<!-- Fixing jquery .live incompatability -->
+<script type="text/javascript">
+jQuery.fn.extend({
+    live: function (event, callback) {
+       if (this.selector) {            
+            jQuery(document).on(event, this.selector, callback);
+        }
+    }
+});
+</script>
+
+<!-- Boostrap JavaScript -->
+<script type="text/javascript" src="packages/bootstrap3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="packages/FlatUI-2/js/flat-ui.js"></script>
+
+<!-- Bibliography List -->
+<script src="js/bib-list.js" type="text/javascript"></script>
+
+
+<!-- Using bibtex-list -->
+<script type='text/javascript'>
+    $(document).ready(function(){
+            $("#bibfile").load('./all_publications.bib', function(){
+                bibtexify('#bibfile', 'biblist', {'visualization': false});
+                });
+            });
+</script>
+
+
+</body>
+
+
+</body>
