@@ -2,22 +2,23 @@
 
 <html lang="en">
 <head>
-    <title>Prithwish Chakraborty</title>
-    <meta charset="utf-8"></meta>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prithwish Chakraborty</title>
+  <meta charset="utf-8"></meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
-    <!-- Loading Bootstrap -->
-    <link href="./packages/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  
+  <!-- Loading Bootstrap -->
+  <link href="./packages/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Loading Flat UI -->
-    <link href="packages/FlatUI-2/css/flat-ui.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./packages/FlatUI-2/img/favicon.ico">
+  <!-- Loading Flat UI -->
+  <link href="packages/FlatUI-2/css/flat-ui.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./packages/FlatUI-2/img/favicon.ico">
 
-    <!-- Custom styles for this template -->
-    <link href="css/appearance.css" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href="css/appearance.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -29,7 +30,6 @@
       <span class="sr-only">Toggle navigation</span>
     </button>
     <a class="navbar-brand" href="#">
-        <span class="glyphicon glyphicon-user"></span>
         Prithwish Chakraborty
     </a>
   </div>
@@ -74,7 +74,7 @@
         </dd>
         <br/>
 
-        <dt><span class="glyphicon glyphicon-leaf"></span> About Me</dt>
+        <dt><span class="glyphicon glyphicon-user"></span> About Me</dt>
         <dd> I am a final year student working broadly in the field of data 
         mining. Primarily, I work on 
         <em>multivariate temporal data mining in the presence of weakly 
@@ -113,7 +113,7 @@
 <!-- Second area. Will Contain research summary and skills -->
   <!-- Start of middle pane -->
   <div class="row">
-    <div id="Activities" class="col-xs-12 col-sm-7">
+    <div id="Activities" class="col-xs-12 col-sm-7 col-lg-6">
       <h3>
         <span class="glyphicon glyphicon-tasks"></span>
         Activities
@@ -122,40 +122,45 @@
         <dt><span class="glyphicon glyphicon-certificate">
             </span> Patents
         </dt>
-        <dd><span class="title">
+        <dd><ul class="list-unstyled">
+          <li><span class="title">
           M. Marwah, M. Arlitt, P. Chakraborty, N. Ramakrishnan,
           &quot;Predicting near-future photovoltaic generation&quot;,
           Sept. 28 2012. US Patent App. 13/631,480
-        </span></dd>
+          </span>
+          </li>
+        </ul></dd>
         <br/>
 
         <dt><span class="glyphicon glyphicon-certificate">
             </span> Invited Talks
         </dt>
-        <dd>
-          <span class="title">
+        <dd><ul class="list-unstyled">
+          <li><span class="title">
             P. Chakraborty,
             &quot;Data Driven Model for Disease Forecasting&quot;,
             Invited Talk, BCDE 2014.
           </span><br/>
           <a href='./resources/presentations/prithwi_bcde14_talk.pdf' target='_blank'
               class='btn btn-inverse btn-sm'>Paper</a>
-        </dd>
+          </li>
+        </ul></dd>
         <br/>
         <dt><span class="glyphicon glyphicon-certificate">
             </span> Honor Societies/Honors
         </dt>
-        <dd>
-          <span class="title">
+        <dd><ul class="list-unstyled">
+          <li><span class="title">
           Alpha Epsilon Lambda (2013); Upsilon Pi Epsilon (2013);
           Who's Who list (2014);
           </span>
-        </dd>
+          </li>
+        </ul></dd>
       </dl>
     </div><!-- /#research-interests -->
 
-    <div id="sidebar" class="col-xs-12 col-sm-5">
-      <div id="research-interests">
+    <div id="sidebar" class="col-xs-12 col-sm-5 col-lg-6">
+      <div id="research-interests" class="col-lg-8">
         <h3>
           <span class="glyphicon glyphicon-tasks"></span>
           Research Interests
@@ -164,8 +169,10 @@
         alt="Data Mining, Bayesian, etc."/>
       </div><!-- /#research-interests -->
 
-      <div id="skills">
-        <h3>Technical Skills</h3>
+      <div id="skills" class="col-lg-4">
+        <h3><span class="glyphicon glyphicon-th-list"></span>
+          Technical Skills
+        </h3>
         <div class="progress active">
           <div class="progress-bar" style="width: 88%;">
             <span>Python</span>
@@ -205,7 +212,7 @@
           Selected Publications
       </h3>
       <div id='summary' class='col-xs-12 table display'>
-        <ul>
+        <ul class="list-unstyled">
           <li>
             <span class="title">
               Z. Weng, P. Chakraborty, et al., (2015).
